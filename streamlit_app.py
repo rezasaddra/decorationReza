@@ -1,7 +1,7 @@
-# pip install -q -U google-generativeai
-# pip install ipython
-# pip install pillow
-# pip install streamlit
+pip install -q -U google-generativeai
+pip install ipython
+pip install pillow
+pip install streamlit
 import streamlit as st
 from PIL import Image
 import google.generativeai as genai
