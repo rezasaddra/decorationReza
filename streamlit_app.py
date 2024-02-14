@@ -2,17 +2,12 @@
 # pip install ipython
 # pip install pillow
 # pip install streamlit
-
 import streamlit as st
-import matplotlib.pyplot as plt
 from PIL import Image
 import google.generativeai as genai
 from deep_translator.google import GoogleTranslator
-
-#api = st.text_input('put your api')
-
+api = st.text_input('put your api')
 API = "AIzaSyBlbIX0cwLZKqgd6866VYd2p8LYFp3_6Fo"
-
 genai.configure(api_key=API)
 model = genai.GenerativeModel('gemini-pro-vision')
 picture = st.camera_input("Take a picture")
